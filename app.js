@@ -1,4 +1,3 @@
-// ÄNDERUNG v4: strenger Bewertungsmodus
 function norm(t){
   return t.toLowerCase().replace(/[^a-zäöüß ]/g,"");
 }
