@@ -1,0 +1,75 @@
+body{
+  margin:0;
+  font-family:system-ui, sans-serif;
+  background:#111;
+  color:#eee;
+}
+
+.bg-map{
+  position:fixed;
+  inset:0;
+  background:url('assets/berlin_1840.jpg') center/cover no-repeat;
+  opacity:0.35;
+  z-index:-1;
+}
+
+.topbar{
+  background:rgba(0,0,0,0.75);
+  padding:12px 16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+}
+
+.content{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
+
+section{ margin-bottom:40px; }
+
+.task{
+  background:rgba(0,0,0,0.65);
+  padding:16px;
+  margin:20px 0;
+  border-radius:12px;
+}
+
+textarea{
+  width:100%;
+  min-height:80px;
+  margin:8px 0;
+}
+
+.btn{
+  padding:8px 14px;
+  border-radius:999px;
+  border:none;
+  background:#6aa6ff;
+  color:black;
+  cursor:pointer;
+}
+
+.btn.ghost{
+  background:transparent;
+  color:#ddd;
+  border:1px solid #555;
+}
+
+.feedback{
+  margin-top:8px;
+  font-weight:600;
+}
+
+.solution{
+  margin-top:8px;
+  font-size:0.9em;
+  color:#ccc;
+}
+
+.hidden{ display:none; }
+
+.muted{ color:#bbb; }
