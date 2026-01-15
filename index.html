@@ -3,52 +3,57 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lernlandschaft – Fanny Lewald: Jenny</title>
+<title>Lernlandschaft – Fanny Lewald: Jenny (v4)</title>
 <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
+<!-- ÄNDERUNG v4: historischer Stadtplan als dauerhafter Hintergrund -->
 <div class="bg-map"></div>
 
 <header class="topbar">
   <div>
     <strong>Lernlandschaft</strong><br/>
-    <span class="muted">Fanny Lewald: <em>Jenny</em> – Personen · Konflikte · Religion · Politik · Kultur</span>
+    <span class="muted">Fanny Lewald: <em>Jenny</em> – textnahe Analyse · Matur-Niveau</span>
   </div>
   <div>
     <button class="btn ghost" onclick="window.print()">PDF</button>
-    <button class="btn" id="exportBtn">Export</button>
   </div>
 </header>
 
 <main class="content">
 
-<section class="intro">
-<h1>Überblick</h1>
+<section>
+<h1>Arbeitsauftrag</h1>
 <p>
-Diese Lernlandschaft verbindet <strong>Wissenssicherung</strong> mit
-<strong>Einfühlung, Perspektivwechsel und Fremderfahrung</strong>.
-Alle offenen Aufgaben verfügen über ein <strong>gestuftes Sofortfeedback</strong>.
+Diese Lernlandschaft verlangt <strong>präzise Textarbeit</strong>.
+Als korrekt gelten Antworten nur, wenn sie
+<strong>mindestens zwei konkrete Textsignale</strong> (Handlung, Haltung, Situation, Beziehung)
+benennen.
 </p>
 </section>
 
+<!-- ================= MODUL A ================= -->
 <section>
-<h2>Modul A – Personenkonstellationen</h2>
+<h2>Modul A – Personenkonstellationen (situationsgebunden)</h2>
 
 <div class="task" data-id="A1" data-type="mc" data-correct="B">
-<p>Welche Beziehung besteht zwischen Jenny Meier und Joseph Meier?</p>
+<p><strong>Situation:</strong> Einführung Joseph Meiers im familiären Umfeld.<br/>
+Welche Beziehung besteht zwischen Jenny Meier und Joseph Meier?</p>
 <label><input type="radio" name="A1" value="A"/> Geschwister</label><br/>
 <label><input type="radio" name="A1" value="B"/> Cousine und Cousin</label><br/>
 <label><input type="radio" name="A1" value="C"/> Verlobte</label><br/>
 <label><input type="radio" name="A1" value="D"/> Lehrer–Schülerin</label><br/>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>
-<div class="solution hidden">Richtig ist: Cousine und Cousin.</div>
+<div class="solution hidden">Joseph ist Jennys Cousin.</div>
 </div>
 
 <div class="task" data-id="A2" data-type="text"
- data-keywords="arzt,bruder,familie,verantwortung"
- data-solution="Eduard ist Arzt, Bruder von Jenny und trägt Verantwortung für Familie und Patienten.">
-<p>Beschreibe Eduard Meiers Stellung innerhalb der Familie in 2–3 Stichworten.</p>
+ data-keywords="arzt,bruder,pflicht,verantwortung,ernst"
+ data-solution="Eduard erscheint als verantwortungsbewusster Arzt, ernster Bruder und moralische Stütze der Familie.">
+<p><strong>Situation:</strong> Familiäre Gespräche über Zukunft und Beruf.<br/>
+Beschreibe Eduard Meiers Stellung in der Familie mit <strong>mindestens drei</strong> konkreten Textsignalen.</p>
 <textarea></textarea>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>
@@ -56,9 +61,10 @@ Alle offenen Aufgaben verfügen über ein <strong>gestuftes Sofortfeedback</stro
 </div>
 
 <div class="task" data-id="A3" data-type="text"
- data-keywords="cousin,autorität,abhängigkeit,heirat"
- data-solution="Joseph ist Jennys Cousin, tritt autoritär auf und verkörpert eine erwartete, aber ungeliebte Heiratsoption.">
-<p>Welche Rolle nimmt Joseph Meier in Jennys Leben ein?</p>
+ data-keywords="forderung,befehl,heirat,dominant,anspruch"
+ data-solution="Joseph tritt fordernd auf, betrachtet die Ehe als Anspruch und missachtet Jennys innere Ablehnung.">
+<p><strong>Situation:</strong> Gespräche über die geplante Ehe.<br/>
+Woran zeigt sich Josephs Anspruchsdenken konkret? Nenne <strong>mindestens zwei</strong> Verhaltensweisen.</p>
 <textarea></textarea>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>
@@ -66,34 +72,39 @@ Alle offenen Aufgaben verfügen über ein <strong>gestuftes Sofortfeedback</stro
 </div>
 
 <div class="task" data-id="A4" data-type="text"
- data-keywords="lehrer,religion,liebe,abhängigkeit"
- data-solution="Reinhard ist Lehrer, religiös geprägt und emotional wie sozial in einem Abhängigkeitsverhältnis zu Jenny.">
-<p>Warum ist Reinhard eine zentrale, aber problematische Figur für Jenny?</p>
+ data-keywords="lehrer,abhängigkeit,gefühl,macht,rolle"
+ data-solution="Reinhard steht als Lehrer in einem Machtverhältnis zu Jenny und ist zugleich emotional abhängig.">
+<p><strong>Situation:</strong> Unterrichts- und Nähe-Szenen mit Reinhard.<br/>
+Warum entsteht hier ein Macht- und Abhängigkeitsverhältnis? Beziehe dich auf <strong>Rolle und Verhalten</strong>.</p>
 <textarea></textarea>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>
 <div class="solution hidden"></div>
 </div>
+
 </section>
 
+<!-- ================= MODUL B ================= -->
 <section>
-<h2>Modul B – Gesellschaftliche Normen & Religion</h2>
+<h2>Modul B – Religion & gesellschaftliche Ordnung (konkret)</h2>
 
 <div class="task" data-id="B1" data-type="mc" data-correct="C">
-<p>Welcher Grund verhindert Eduards beruflichen Aufstieg?</p>
-<label><input type="radio" name="B1" value="A"/> Fehlende Ausbildung</label><br/>
-<label><input type="radio" name="B1" value="B"/> Politische Untätigkeit</label><br/>
+<p><strong>Situation:</strong> Diskussionen um berufliche Anerkennung.<br/>
+Warum bleibt Eduard der gesellschaftliche Aufstieg verwehrt?</p>
+<label><input type="radio" name="B1" value="A"/> Fachliche Defizite</label><br/>
+<label><input type="radio" name="B1" value="B"/> Politische Haltung</label><br/>
 <label><input type="radio" name="B1" value="C"/> Jüdische Herkunft</label><br/>
-<label><input type="radio" name="B1" value="D"/> Familiäre Verpflichtungen</label><br/>
+<label><input type="radio" name="B1" value="D"/> Familiäre Rücksicht</label><br/>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>
-<div class="solution hidden">Diskriminierung aufgrund der jüdischen Herkunft.</div>
+<div class="solution hidden">Entscheidend ist seine jüdische Herkunft.</div>
 </div>
 
 <div class="task" data-id="B2" data-type="text"
- data-keywords="judentum,christentum,ausgrenzung,vorurteil"
- data-solution="Der Roman zeigt religiöse Ausgrenzung von Juden durch christliche Mehrheitsgesellschaft und institutionelle Diskriminierung.">
-<p>Wie zeigt der Roman religiöse Ausgrenzung?</p>
+ data-keywords="amt,ausgrenzung,gesellschaft,religion"
+ data-solution="Der Text zeigt Ausgrenzung durch Ausschluss von Ämtern trotz Leistung.">
+<p><strong>Situation:</strong> Eduards berufliche Perspektiven.<br/>
+Wie wird religiöse Ausgrenzung im Alltag konkret sichtbar? Nenne <strong>zwei Beispiele</strong>.</p>
 <textarea></textarea>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>
@@ -101,78 +112,56 @@ Alle offenen Aufgaben verfügen über ein <strong>gestuftes Sofortfeedback</stro
 </div>
 
 <div class="task" data-id="B3" data-type="text"
- data-keywords="ehe,rolle,frau,gesellschaft"
- data-solution="Von Frauen wird Gehorsam, Heirat und Anpassung erwartet, nicht Selbstbestimmung oder freie Liebeswahl.">
-<p>Welche gesellschaftlichen Erwartungen werden an Jenny als Frau gestellt?</p>
+ data-keywords="ehe,gehorsam,pflicht,rolle"
+ data-solution="Jenny soll heiraten, gehorchen und sich gesellschaftlichen Erwartungen fügen.">
+<p><strong>Situation:</strong> Gespräche über Jennys Zukunft.<br/>
+Welche Erwartungen werden an Jenny als junge Frau gestellt? Beziehe dich auf <strong>konkrete Aussagen</strong>.</p>
 <textarea></textarea>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>
 <div class="solution hidden"></div>
 </div>
 
-<div class="task" data-id="B4" data-type="text"
- data-keywords="religion,moral,erziehung,glaube"
- data-solution="Religion dient als moralischer Maßstab, aber auch als Mittel gesellschaftlicher Kontrolle.">
-<p>Welche Funktion übernimmt Religion im sozialen Gefüge des Romans?</p>
-<textarea></textarea>
-<button class="btn submit">Antwort prüfen</button>
-<div class="feedback"></div>
-<div class="solution hidden"></div>
-</div>
 </section>
 
+<!-- ================= MODUL C ================= -->
 <section>
-<h2>Modul C – Politik & Dilemmata</h2>
+<h2>Modul C – Dilemmata & politische Lesart</h2>
 
 <div class="task" data-id="C1" data-type="mc" data-correct="D">
-<p>Warum ist die Beziehung Jenny–Reinhard moralisch problematisch?</p>
+<p><strong>Situation:</strong> Zuspitzung der Beziehung Jenny–Reinhard.<br/>
+Warum ist diese Beziehung moralisch problematisch?</p>
 <label><input type="radio" name="C1" value="A"/> Altersunterschied</label><br/>
-<label><input type="radio" name="C1" value="B"/> Religiöse Differenz</label><br/>
-<label><input type="radio" name="C1" value="C"/> Lehrer-Schülerin-Verhältnis</label><br/>
-<label><input type="radio" name="C1" value="D"/> Alle genannten Punkte</label><br/>
+<label><input type="radio" name="C1" value="B"/> Religion</label><br/>
+<label><input type="radio" name="C1" value="C"/> Abhängigkeit</label><br/>
+<label><input type="radio" name="C1" value="D"/> Zusammenspiel aller Faktoren</label><br/>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>
-<div class="solution hidden">Alle genannten Punkte.</div>
+<div class="solution hidden">Alle Faktoren wirken zusammen.</div>
 </div>
 
 <div class="task" data-id="C2" data-type="text"
- data-keywords="freiheit,entscheidung,konsequenz,risiko"
- data-solution="Jenny entscheidet sich für innere Freiheit und riskiert familiären und gesellschaftlichen Bruch.">
-<p>Welche politische Dimension hat Jennys persönliche Entscheidung?</p>
+ data-keywords="bruch,ordnung,freiheit,entscheidung"
+ data-solution="Jennys Entscheidung ist politisch, weil sie gesellschaftliche Ordnung aktiv zurückweist.">
+<p><strong>Situation:</strong> Jennys innere Entscheidung gegen Anpassung.<br/>
+Warum kann diese Entscheidung als politischer Akt gelesen werden? Nenne <strong>zwei Gründe</strong>.</p>
 <textarea></textarea>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>
 <div class="solution hidden"></div>
 </div>
 
-<div class="task" data-id="C3" data-type="text"
- data-keywords="diskriminierung,staat,amt,rechte"
- data-solution="Der Staat verweigert Eduard Rechte und Ämter aufgrund seiner Religion – strukturelle Diskriminierung.">
-<p>Wie zeigt sich politische Diskriminierung im Roman?</p>
-<textarea></textarea>
-<button class="btn submit">Antwort prüfen</button>
-<div class="feedback"></div>
-<div class="solution hidden"></div>
-</div>
-
-<div class="task" data-id="C4" data-type="text"
- data-keywords="pflicht,liebe,konflikt,entscheidung"
- data-solution="Das Dilemma besteht zwischen Pflicht gegenüber Familie/Gesellschaft und persönlicher Wahrheit.">
-<p>Formuliere das zentrale Dilemma des Romans in einem Satz.</p>
-<textarea></textarea>
-<button class="btn submit">Antwort prüfen</button>
-<div class="feedback"></div>
-<div class="solution hidden"></div>
-</div>
 </section>
 
+<!-- ================= MODUL D ================= -->
 <section>
-<h2>Modul D – Kultur & Einfühlung</h2>
+<h2>Modul D – Einfühlung unter Textzwang</h2>
 
 <div class="task" data-id="D1" data-type="text"
- data-keywords="gefühl,innerlich,zerrissen,spannung"
- data-solution="Jenny ist innerlich zerrissen zwischen Liebe, Pflicht und Selbstbestimmung.">
-<p>Welche Gefühle prägen Jennys innere Situation?</p>
+ data-keywords="angst,hoffnung,zerrissen"
+ data-solution="Jenny schwankt zwischen Hoffnung auf Selbstbestimmung und Angst vor gesellschaftlichem Ausschluss.">
+<p><strong>Situation:</strong> Jennys innere Monologe und Reaktionen.<br/>
+Welche inneren Spannungen bestimmen ihr Handeln? Belege mit <strong>zwei Textsignalen</strong>.</p>
 <textarea></textarea>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>
@@ -180,19 +169,11 @@ Alle offenen Aufgaben verfügen über ein <strong>gestuftes Sofortfeedback</stro
 </div>
 
 <div class="task" data-id="D2" data-type="text"
- data-keywords="heute,aktuell,vergleich,diskriminierung"
- data-solution="Konflikte wie Diskriminierung, Rollenerwartungen und Liebesfreiheit sind bis heute aktuell.">
-<p>Welche Konflikte aus <em>Jenny</em> sind heute noch aktuell?</p>
-<textarea></textarea>
-<button class="btn submit">Antwort prüfen</button>
-<div class="feedback"></div>
-<div class="solution hidden"></div>
-</div>
-
-<div class="task" data-id="D3" data-type="text"
  data-keywords="ich,entscheidung,freiheit,leben"
- data-solution="Der Text soll eine Ich-Perspektive zeigen und eine existenzielle Entscheidung ausdrücken.">
-<p>Schreibe 3–5 Sätze aus Jennys Perspektive beginnend mit „Lieber will ich sterben, als …“</p>
+ data-solution="Ein gelungener Text zeigt Ich-Perspektive, existenzielle Entscheidung und emotionale Zuspitzung.">
+<p>Schreibe 4–6 Sätze aus Jennys Perspektive beginnend mit:<br/>
+<strong>„Lieber will ich sterben, als …“</strong><br/>
+<strong>Pflicht:</strong> Mindestens zwei Anspielungen auf konkrete Situationen aus dem Roman.</p>
 <textarea></textarea>
 <button class="btn submit">Antwort prüfen</button>
 <div class="feedback"></div>

@@ -1,32 +1,30 @@
+// ÄNDERUNG v4: strenger Bewertungsmodus
 function norm(t){
   return t.toLowerCase().replace(/[^a-zäöüß ]/g,"");
 }
 
 document.querySelectorAll(".task").forEach(task=>{
-  let attempts = 0;
-  const btn = task.querySelector(".submit");
-  const feedback = task.querySelector(".feedback");
-  const solution = task.querySelector(".solution");
+  let attempts=0;
+  const btn=task.querySelector(".submit");
+  const feedback=task.querySelector(".feedback");
+  const solution=task.querySelector(".solution");
 
-  btn.addEventListener("click", ()=>{
+  btn.addEventListener("click",()=>{
     attempts++;
-    const type = task.dataset.type;
+    const type=task.dataset.type;
 
     if(type==="mc"){
-      const correct = task.dataset.correct;
-      const checked = task.querySelector("input[type=radio]:checked");
-      if(!checked){
-        feedback.textContent="Bitte wähle eine Antwort.";
-        return;
-      }
-      if(checked.value===correct){
+      const c=task.dataset.correct;
+      const sel=task.querySelector("input:checked");
+      if(!sel){feedback.textContent="Bitte auswählen.";return;}
+      if(sel.value===c){
         feedback.textContent="Richtig ✔";
         feedback.style.color="#6f6";
       }else if(attempts===1){
-        feedback.textContent="Falsch ✖";
+        feedback.textContent="Falsch.";
         feedback.style.color="#f66";
       }else if(attempts===2){
-        feedback.textContent="Tipp: Achte auf gesellschaftliche Rahmenbedingungen.";
+        feedback.textContent="Tipp: Denke an Rolle, Situation und Machtverhältnis.";
         feedback.style.color="#fd6";
       }else{
         feedback.textContent="Musterlösung:";
@@ -35,22 +33,22 @@ document.querySelectorAll(".task").forEach(task=>{
     }
 
     if(type==="text"){
-      const txt = task.querySelector("textarea").value;
-      const keys = task.dataset.keywords.split(",");
-      const hit = keys.some(k=>norm(txt).includes(norm(k)));
+      const txt=task.querySelector("textarea").value;
+      const keys=task.dataset.keywords.split(",");
+      const hits=keys.filter(k=>norm(txt).includes(norm(k))).length;
 
-      if(hit){
-        feedback.textContent="Antwort sinnvoll ✔";
+      if(hits>=2){
+        feedback.textContent="Textnah und differenziert ✔";
         feedback.style.color="#6f6";
       }else if(attempts===1){
-        feedback.textContent="Noch nicht überzeugend.";
+        feedback.textContent="Zu allgemein oder ohne Textbezug.";
         feedback.style.color="#f66";
       }else if(attempts===2){
-        feedback.textContent="Tipp: Nutze zentrale Begriffe aus dem Text.";
+        feedback.textContent="Tipp: Nenne konkrete Situationen oder Rollen aus dem Roman.";
         feedback.style.color="#fd6";
       }else{
         feedback.textContent="Musterlösung:";
-        solution.textContent = task.dataset.solution;
+        solution.textContent=task.dataset.solution;
         solution.classList.remove("hidden");
       }
     }
