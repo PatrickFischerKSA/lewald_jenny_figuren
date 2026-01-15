@@ -23,7 +23,7 @@ document.querySelectorAll(".task").forEach(task=>{
         feedback.textContent="Falsch.";
         feedback.style.color="#f66";
       }else if(attempts===2){
-        feedback.textContent="Tipp: Denke an Rolle, Situation und Machtverhältnis.";
+        feedback.textContent="Tipp: Achte auf Situation, Rolle und Machtverhältnis.";
         feedback.style.color="#fd6";
       }else{
         feedback.textContent="Musterlösung:";
@@ -40,10 +40,10 @@ document.querySelectorAll(".task").forEach(task=>{
         feedback.textContent="Textnah und differenziert ✔";
         feedback.style.color="#6f6";
       }else if(attempts===1){
-        feedback.textContent="Zu allgemein oder ohne Textbezug.";
+        feedback.textContent="Zu allgemein oder ohne ausreichenden Textbezug.";
         feedback.style.color="#f66";
       }else if(attempts===2){
-        feedback.textContent="Tipp: Nenne konkrete Situationen oder Rollen aus dem Roman.";
+        feedback.textContent="Tipp: Beziehe dich explizit auf beschriebene Situationen.";
         feedback.style.color="#fd6";
       }else{
         feedback.textContent="Musterlösung:";
